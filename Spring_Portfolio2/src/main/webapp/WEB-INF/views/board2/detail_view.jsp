@@ -13,7 +13,7 @@
 		<h3>상세보기</h3>
 			<div class="panel">
 				<div class="panel-body">
-				<span class="glyphicon glyphicon-plus">조회수</span>
+				<span class="glyphicon glyphicon-plus">조회수 </span>
 				<p class="form-control">${dto.bhit}</p>
 				</div>
 		</div>

@@ -10,6 +10,6 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
  </head>
  <body>
- 	<script>location.href="${pageContext.request.contextPath}/board2/list2";</script>
+ 	<script>location.href="${pageContext.request.contextPath}/board2/list2"; </script>
  </body>
 </html>

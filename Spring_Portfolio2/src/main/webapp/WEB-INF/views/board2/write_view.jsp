@@ -7,7 +7,7 @@
 			<fieldset>
 			<legend>QNA등록</legend>
 			<div class="form-group">
-				<label for="bname">이름</label>
+				<label for="bname">이름 </label>
 				<input type="text" id = "bname" name = "bname" class="form-control"/>
 			</div>
 			

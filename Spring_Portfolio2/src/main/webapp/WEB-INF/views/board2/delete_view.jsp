@@ -7,7 +7,7 @@
 				<div class="form-group">
 					<label for="bpass">비밀번호</label>
 					<input type="password" name = "bpass" id = "bpass" class="form-control">
-					<span>(*)삭제시 필수입니다</span>
+					<span>(*)삭제시 필수입니다 </span>
 				</div>
 					
 				<div class="form-group text-right">

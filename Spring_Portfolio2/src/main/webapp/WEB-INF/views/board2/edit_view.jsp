@@ -6,7 +6,7 @@
 		<h3>MULTIBOARD수정하기</h3>  
 			<form action="${pageContext.request.contextPath}/board2/edit2?bno=${dto.bno}"  method="post" id="form">
 				<fieldset>
-					<legend>수정하기</legend>
+					<legend>수정 하기</legend>
 					<div class="form-group">
 						<label for="bname">이름</label>
 						<input type="text" name="bname" id="bname" class="form-control" value="${dto.bname}" readonly>
