@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.company.mapper.BoardMapper">
+  
+  	<select id="list" resultType="com.company.dto.BoardDto"><!-- id는 TestMapper 의 메서드명과 동일하게 , resultType 는 TestMapper의 리턴값 -->
+  		select * from mvcboard3 order by bno desc
+  	</select>
+  	
+  	<insert id="insert"> <!-- 메서드명 -->
+  		insert into mvcboard3( bname, bpass, btitle, bcontent, bip) 
+  		values (#{bname}, #{bpass}, #{btitle}, #{bcontent}, #{bip})<!--  getter / setter 알아서 들어감 -->
+  	</insert>
+  	
+  	<select id="read" resultType="com.company.dto.BoardDto"> <!-- id = 메서드명 / resultType = 리턴값 -->
+  		select * from mvcboard3 where bno= #{bno}
+  	</select>
+  	
+  	<update id="update_hit">
+  		update mvcboard3 set bhit = bhit+1 where bno = #{bno}
+  	</update>
+  	
+  	<update id="update">
+  		update mvcboard3 set btitle=#{btitle}, bcontent=#{bcontent} where bno = #{bno} and bpass= #{bpass}
+  	</update>
+  	
+  	<delete id="delete">
+  		delete from mvcboard3 where bno = #{bno} and bpass= #{bpass}
+  	</delete>
+  	
+  </mapper>
